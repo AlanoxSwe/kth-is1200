@@ -1,0 +1,28 @@
+
+
+
+1. pointer p increments m value by 1, fun() copies val of m to param and increments it and sets gv to the same value as param
+2. 32 bits, i.e. 0xA0003FEC
+3. Because it consists of 8 characters + nullbyte
+4. "Program Flash". Data is binary machine code of the functions
+
+
+
+1. In "virtual RAM"
+2. In "Reserved", 
+3. p address is A0003FE8 val == 7
+4. p address is same as above, val == 8 because line 54, "*p = *p + 1;"
+5. p sets val of cs to 1234abcd, cs[0]==CD, cs[4]==12, conclusion: machine is little endian
+
+
+
+cs[0]
+AM14
+A0003FEC
+CD
+
+cs[3]
+AM17
+A0003FEF
+12
+	

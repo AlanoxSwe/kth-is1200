@@ -1,0 +1,11 @@
+
+if sista byte == 0
+{
+	if sista näst byte == 0
+	{
+		X plats = 5;
+		null plats = 6;
+	} else {
+		null plats = 5;
+	}
+}
